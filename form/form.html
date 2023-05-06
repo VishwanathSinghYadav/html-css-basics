@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <h1>Contact Form</h1>
+    <form action="app.js" method="post">
+      <div>
+        Name:<input
+          type="text"
+          name="Name"
+          id="Name"
+          placeholder="Type your full name"
+          required
+        />
+      </div>
+      <br />
+
+      <div>
+        Email:<input
+          type="email"
+          name="Email"
+          id="email"
+          required
+          placeholder="Type your email id"
+        />
+      </div>
+      <br />
+
+      <div>
+        Contact number:
+        <input type="number" name="contactNumber" id="contactNumber" required />
+      </div>
+      <br />
+
+      <div>
+        Gender:
+        <select name="gender" id="gender">
+          <option>Choose one</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">others</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        Password:
+        <input type="password" name="password" id="password" required />
+      </div>
+      <br />
+
+      <div>
+        Service: Html<input type="checkbox" name="service" id="html" />
+        CSS<input type="checkbox" name="service" id="css" /> Javascript<input
+          type="checkbox"
+          name="service"
+          id="javascript"
+        />
+        React<input type="checkbox" name="service" id="react" />
+      </div>
+      <br />
+
+      <fieldset>
+        <legend>Payment Type</legend>
+        COD <input type="radio" name="paymentType" id="COD" /> Card
+        <input type="radio" name="paymentType" id="Card" />
+      </fieldset>
+      <br />
+
+      <div>
+        Message:
+        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+      </div>
+      <br />
+
+      <div><input type="submit" value="submit" /></div>
+    </form>
+  </body>
+</html>
